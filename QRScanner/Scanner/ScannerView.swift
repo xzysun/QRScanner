@@ -96,6 +96,7 @@ class ScannerView: UIView, AVCaptureMetadataOutputObjectsDelegate {
         })
     }
     
+    @available(iOS 8.0, *)
     func readFromImage(image:UIImage) ->String? {
         let context = CIContext(options: nil)
         let dector = CIDetector(ofType: CIDetectorTypeQRCode, context: context, options: nil)

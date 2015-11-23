@@ -45,6 +45,12 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate,UINavigat
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : AnyObject]) {
         let image:UIImage = info[UIImagePickerControllerOriginalImage] as! UIImage
+//        if #available(iOS 8.0, *) {
+//            let result = scannerView.readFromImage(image)
+//            resultLabel.text = result
+//        } else {
+//            // Fallback on earlier versions
+//        }
         let result = scannerView.readFromImage(image)
         resultLabel.text = result
         self.dismissViewControllerAnimated(true) { () -> Void in
