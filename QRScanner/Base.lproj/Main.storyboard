@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QRScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q8S-bP-igB" customClass="ScannerView" customModule="QRScanner" customModuleProvider="target">
+                                <rect key="frame" x="150" y="60" width="300" height="260"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="1SV-8f-3f4"/>
+                                    <constraint firstAttribute="height" constant="260" id="ca8-sP-X2s"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGv-0B-QiH">
+                                <rect key="frame" x="246" y="381" width="109" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Begin/End Scan"/>
+                                <connections>
+                                    <action selector="scanButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z6T-RC-TG3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kji-kl-p5P">
+                                <rect key="frame" x="256" y="431" width="89" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Select Image"/>
+                                <connections>
+                                    <action selector="imageButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vbw-eb-yTw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Li-6s-eJU">
+                                <rect key="frame" x="276" y="340" width="48" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="aGv-0B-QiH" firstAttribute="top" secondItem="9Li-6s-eJU" secondAttribute="bottom" constant="20" id="5DZ-7A-KX1"/>
+                            <constraint firstItem="9Li-6s-eJU" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="7hD-Ak-YxR"/>
+                            <constraint firstItem="9Li-6s-eJU" firstAttribute="top" secondItem="Q8S-bP-igB" secondAttribute="bottom" constant="20" id="Nl1-vh-5Nr"/>
+                            <constraint firstItem="kji-kl-p5P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XHl-SW-ZCr"/>
+                            <constraint firstItem="Q8S-bP-igB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZOM-Qu-YcB"/>
+                            <constraint firstItem="9Li-6s-eJU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bX8-a5-P2Q"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="9Li-6s-eJU" secondAttribute="trailing" constant="20" id="c09-ME-LtT"/>
+                            <constraint firstItem="Q8S-bP-igB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="etL-Hj-Dy0"/>
+                            <constraint firstItem="aGv-0B-QiH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fMg-0x-dOs"/>
+                            <constraint firstItem="kji-kl-p5P" firstAttribute="top" secondItem="aGv-0B-QiH" secondAttribute="bottom" constant="20" id="t8E-ke-cJr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="9Li-6s-eJU" id="nay-wb-HXY"/>
+                        <outlet property="scannerView" destination="Q8S-bP-igB" id="TFL-Te-tjT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

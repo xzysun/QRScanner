@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06AA72F11C02F5AC007B9B5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA72F01C02F5AC007B9B5B /* AppDelegate.swift */; };
+		06AA72F31C02F5AC007B9B5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA72F21C02F5AC007B9B5B /* ViewController.swift */; };
+		06AA72F61C02F5AC007B9B5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06AA72F41C02F5AC007B9B5B /* Main.storyboard */; };
+		06AA72F81C02F5AC007B9B5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06AA72F71C02F5AC007B9B5B /* Assets.xcassets */; };
+		06AA72FB1C02F5AC007B9B5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06AA72F91C02F5AC007B9B5B /* LaunchScreen.storyboard */; };
+		06AA73041C02F5DA007B9B5B /* ScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06AA73031C02F5DA007B9B5B /* ScannerView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06AA72ED1C02F5AC007B9B5B /* QRScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		06AA72F01C02F5AC007B9B5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		06AA72F21C02F5AC007B9B5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		06AA72F51C02F5AC007B9B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		06AA72F71C02F5AC007B9B5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		06AA72FA1C02F5AC007B9B5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		06AA72FC1C02F5AC007B9B5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		06AA73031C02F5DA007B9B5B /* ScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06AA72EA1C02F5AC007B9B5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06AA72E41C02F5AC007B9B5B = {
+			isa = PBXGroup;
+			children = (
+				06AA72EF1C02F5AC007B9B5B /* QRScanner */,
+				06AA72EE1C02F5AC007B9B5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		06AA72EE1C02F5AC007B9B5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				06AA72ED1C02F5AC007B9B5B /* QRScanner.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		06AA72EF1C02F5AC007B9B5B /* QRScanner */ = {
+			isa = PBXGroup;
+			children = (
+				06AA73021C02F5C1007B9B5B /* Scanner */,
+				06AA72F01C02F5AC007B9B5B /* AppDelegate.swift */,
+				06AA72F21C02F5AC007B9B5B /* ViewController.swift */,
+				06AA72F41C02F5AC007B9B5B /* Main.storyboard */,
+				06AA72F71C02F5AC007B9B5B /* Assets.xcassets */,
+				06AA72F91C02F5AC007B9B5B /* LaunchScreen.storyboard */,
+				06AA72FC1C02F5AC007B9B5B /* Info.plist */,
+			);
+			path = QRScanner;
+			sourceTree = "<group>";
+		};
+		06AA73021C02F5C1007B9B5B /* Scanner */ = {
+			isa = PBXGroup;
+			children = (
+				06AA73031C02F5DA007B9B5B /* ScannerView.swift */,
+			);
+			path = Scanner;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		06AA72EC1C02F5AC007B9B5B /* QRScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 06AA72FF1C02F5AC007B9B5B /* Build configuration list for PBXNativeTarget "QRScanner" */;
+			buildPhases = (
+				06AA72E91C02F5AC007B9B5B /* Sources */,
+				06AA72EA1C02F5AC007B9B5B /* Frameworks */,
+				06AA72EB1C02F5AC007B9B5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRScanner;
+			productName = QRScanner;
+			productReference = 06AA72ED1C02F5AC007B9B5B /* QRScanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		06AA72E51C02F5AC007B9B5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = netease;
+				TargetAttributes = {
+					06AA72EC1C02F5AC007B9B5B = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 06AA72E81C02F5AC007B9B5B /* Build configuration list for PBXProject "QRScanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 06AA72E41C02F5AC007B9B5B;
+			productRefGroup = 06AA72EE1C02F5AC007B9B5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				06AA72EC1C02F5AC007B9B5B /* QRScanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06AA72EB1C02F5AC007B9B5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06AA72FB1C02F5AC007B9B5B /* LaunchScreen.storyboard in Resources */,
+				06AA72F81C02F5AC007B9B5B /* Assets.xcassets in Resources */,
+				06AA72F61C02F5AC007B9B5B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06AA72E91C02F5AC007B9B5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06AA73041C02F5DA007B9B5B /* ScannerView.swift in Sources */,
+				06AA72F31C02F5AC007B9B5B /* ViewController.swift in Sources */,
+				06AA72F11C02F5AC007B9B5B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		06AA72F41C02F5AC007B9B5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06AA72F51C02F5AC007B9B5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		06AA72F91C02F5AC007B9B5B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				06AA72FA1C02F5AC007B9B5B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		06AA72FD1C02F5AC007B9B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		06AA72FE1C02F5AC007B9B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		06AA73001C02F5AC007B9B5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QRScanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.QRScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		06AA73011C02F5AC007B9B5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = QRScanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.netease.QRScanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		06AA72E81C02F5AC007B9B5B /* Build configuration list for PBXProject "QRScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06AA72FD1C02F5AC007B9B5B /* Debug */,
+				06AA72FE1C02F5AC007B9B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		06AA72FF1C02F5AC007B9B5B /* Build configuration list for PBXNativeTarget "QRScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06AA73001C02F5AC007B9B5B /* Debug */,
+				06AA73011C02F5AC007B9B5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 06AA72E51C02F5AC007B9B5B /* Project object */;
+}
